@@ -1,7 +1,5 @@
 # Simulation Gallery
 
-**Christopher Tang · Modeling & Simulation**
-
 A visual collection of probability, stochastic-process, and emergence experiments. Six reproducible Python models generate the gallery figures; the original classroom exercises are preserved with their comments and citations.
 
 ![Langton’s ant](docs/assets/langtons-ant.png)
@@ -49,17 +47,3 @@ docs/assets/       Generated figures and original GIF animations
 tests/             Probability and deterministic-state checks
 requirements.txt   Python dependencies
 ```
-
-## Original exercises and credits
-
-The source exercises were developed for a Modeling & Simulation course. Original authorship statements, historical AI-use statements and reference links remain in `exercises/`; they describe those original submissions. The reusable runner and gallery are a later portfolio presentation of the same topics.
-
-`exercises/game.py` credits **Tony Song and Christopher Tang**. Earlier card/deck/player exercises retain their own credits. External references are cited in individual source headers. Renamed modules use matching imports; the Monty Hall exercise’s cumulative-win plot was corrected to remove an extra +1, and the random-walk legend now describes the bias directly.
-
-The original exercise scripts may open plots, write GIFs to the current directory, or prompt for blackjack input. For quick, noninteractive reproduction, use `python -m simulations` instead.
-
-## Interpretation and limitations
-
-Monte Carlo estimates fluctuate; agreement with a theoretical value is not a proof. The unbiased random-walk comparison uses the asymptotic mean absolute position, √(2n/π), rather than treating √n (the RMS displacement) as the same quantity. The hexagonal ant is a specific rule extension, not a model of biological ant behavior. Blackjack exercises are supplementary historical code, not a tested casino simulator.
-
-No broad redistribution license is asserted for the combined coursework collection. Preserve source credits and check applicable course rules before reusing assignment solutions.
